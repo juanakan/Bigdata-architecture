@@ -5,6 +5,7 @@
 
 ### Parte 2.
 . Crear un scraper en google Collaboratory a partir de un API o de un crawler con Scrapy, que descargue los datos a un archivo de formato estructurado.
+Parte 2 pincha [aqui]()
 
 ### Parte 3.
 . Utilizar un proveedor de Cloud para montar un cluster de al menos 3 contenedores configurados correctamente o hacerlo en el cluster local
