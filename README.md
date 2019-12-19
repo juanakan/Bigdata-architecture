@@ -1,3 +1,5 @@
 # Bigdata-architecture
 
-link de google pincha [aqui](https://www.google.com/)
+### Parte 1.
+.Utilizar una herramienta de diagrama como google Draw o DIA para diseñar y especificar el flujo de datos y herramientas utilizadas.
+
