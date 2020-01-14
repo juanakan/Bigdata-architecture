@@ -1,13 +1,14 @@
 # Practica Bigdata-architecture
 
 ### Idea general.
-. buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los airbnb mas cercanos al turismo Japones.
+. buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los airbnb mas cercanos.
 
 ### Nombre del producto.
 . Recomendador de airbnb Turismo Japones (los restaurantes Japoneses mejor valorados de Madrid)
 
 ### Estrategia del DAaas.
-. Voy a utilizar herramientas en la nube para realizar un reporte que puedan utilizar paginas de viajes con los 100 airbnb mas cercanos a dichos restaurantes
+. Voy a utilizar herramientas en la nube para realizar un reporte que puedan utilizar paginas de viajes con los 50 airbnb mas cercanos a dichos restaurantes
+
 ### Arquitectura.
 Arquitectura Cloud basada en Scrapy + Google Cloud Storage + HIVE + Dataproc
 Crawler con scrapy que lee de el tenedor, me escribe los resultados en csv. Y lo ejecuto
@@ -18,7 +19,7 @@ Google Cloud.
 Desde Google Storage cogere los datos para crear 2 tablas de HIVE, y realizare
 una query con un JOIN que reste las distancias entre cada airbnb y los 10 mejores restaurantes Japoneses.
 De la query obtendre el TOP de apartamentos de airbnb de menos de 100 euros la noche.
-El resultado de la query estara en Google Storage
+El resultado de la query estara en Google Storage.
 
 ### Operating model
 Hay un operador que soy yo, voy a disparar el cloud function todas las mananas con
@@ -29,7 +30,7 @@ Seguire el standard de levantar el Cluster solamente cuando quiera regenerar el 
 Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 crear tabla de airbnb
-crear tabla de yelp
+crear tabla del Tenedor
 load data inpath de gs://XXXX:input_yelp/ into table yelp
 load data inpath de gs://XXXX:input_airbnb/ into table airbnb
 SELECT JOIN INTO DIRECTORY 'gs://output/results'
