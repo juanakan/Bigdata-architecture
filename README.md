@@ -11,15 +11,13 @@
 
 ### Arquitectura.
 Arquitectura Cloud basada en Google Cloud Storage + HIVE + Dataproc
-Recoger datos de la pagina el tenedor y crear CSV. lo ejecuto
-en un Cloud Function.
-Insertar el dataset de airbnb en HIVE.
+Recoger datos de la pagina el tenedor y crear CSV.
 Tanto el CSV del tenedor como el dataset de airbnb los colocare en un segmento de
 Google Cloud.
 Desde Google Storage cogere los datos para crear 2 tablas de HIVE, y realizare
 una query con un JOIN que reste las distancias entre cada airbnb y los 10 mejores restaurantes Japoneses.
 De la query obtendre el TOP de apartamentos de airbnb de menos de 100 euros la noche.
-El resultado de la query estara en Google Storage.
+El resultado de la query lo metere en Google Storage.
 
 ### Operating model
 Hay un operador que soy yo, voy a recoger los datos diariamente de la pagina el tenedor y guardare el resultado en un directorio del segmento llamado "input_tenedor".
@@ -29,15 +27,14 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 crear tabla de airbnb
 crear tabla del Tenedor
-load data inpath de gs://XXXX:input_tenedor/ into table yelp
-load data inpath de gs://XXXX:input_airbnb/ into table airbnb
+LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_tenedor.csv' INTO TABLE tenedor;
+LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_airbnb.csv' INTO TABLE airbnb;
 SELECT JOIN INTO DIRECTORY 'gs://output/results'
 
 Apago el cluster y me voy a dormir.
 Voy a montar una web con un link directo al Google Storage Segment Object.
 
 ### Desarrollo
-Tengo el cloud function aqui:
 Query de HIVE
 Pantallazo final
 
