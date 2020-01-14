@@ -29,7 +29,7 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 crear tabla de airbnb
 crear tabla del Tenedor
-load data inpath de gs://XXXX:input_yelp/ into table yelp
+load data inpath de gs://XXXX:input_tenedor/ into table yelp
 load data inpath de gs://XXXX:input_airbnb/ into table airbnb
 SELECT JOIN INTO DIRECTORY 'gs://output/results'
 
@@ -43,5 +43,7 @@ Pantallazo final
 
 ### Diagrama
 [https://docs.google.com/drawings/d/1FJflTqXcQr2vmYA0-uEI04GQZUWMOU_00-u2jxAGdMQ/edit?usp=sharing]
+
+
 
 
