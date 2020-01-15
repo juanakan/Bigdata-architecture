@@ -35,6 +35,7 @@ Apago el cluster y me voy a dormir.
 Voy a montar una web con un link directo al Google Storage Segment Object.
 
 ### Desarrollo
+![Texto alternativo](C:\Users\JUAN\Downloads/google storage.png)
 Query de HIVE
 Pantallazo final
 
