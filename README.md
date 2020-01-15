@@ -49,7 +49,7 @@ INSERT OVERWRITE DIRECTORY 'gs://practica-big-data-arquitectura/output/result' R
 ![Pantallazo de Hive](https://github.com/juanakan/Bigdata-architecture/blob/master/select%20hive.PNG)
 
 ##### Resultado final:
-![Carpeta resultado](https://github.com/juanakan/Bigdata-architecture/blob/master/select%20hive.PNG)
+![Carpeta resultado](https://github.com/juanakan/Bigdata-architecture/blob/master/creando%20el%20output.PNG)
 
 
 ### Diagrama
