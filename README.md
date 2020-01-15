@@ -45,6 +45,7 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 ![Pantallazo de los cluster](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
 
 ##### Query de Hive:
+INSERT OVERWRITE DIRECTORY 'gs://practica-big-data-arquitectura/output/result' ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' select airbnb.Listing_Url, tenedor.nombre from airbnb left join tenedor on airbnb.City = tenedor.ciudad where airbnb.geolocation is not null and tenedor.nombre is not null limit 50;
 ![Pantallazo de Hive](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
 
 ##### Resultado final:
