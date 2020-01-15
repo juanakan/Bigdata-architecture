@@ -47,7 +47,7 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 ##### Query de Hive:
 INSERT OVERWRITE DIRECTORY 'gs://practica-big-data-arquitectura/output/result' ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' select airbnb.Listing_Url, tenedor.nombre from airbnb left join tenedor on airbnb.City = tenedor.ciudad where airbnb.Listing_Url is
  not null and tenedor.nombre is not null limit 50;
-![Pantallazo de Hive](https://github.com/juanakan/Bigdata-architecture/blob/master/select%20hive.PNG)
+![Pantallazo de Hive]()
 
 ##### Resultado final:
 [Enlace al archivo creado](https://storage.cloud.google.com/practica-big-data-arquitectura/output/result/000000_0?hl=es)
