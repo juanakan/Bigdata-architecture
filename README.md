@@ -38,16 +38,16 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 ### Desarrollo
 
-### Creación del Storage con los datos de airbnb y del tenedor:
+##### Creación del Storage con los datos de airbnb y del tenedor:
 ![Pantallazo del Storage](https://github.com/juanakan/Bigdata-architecture/blob/master/google%20storage.PNG)
 
-### Creación de los cluster:
+##### Creación de los cluster:
 ![Pantallazo de los cluster](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
 
-### Query de Hive:
+##### Query de Hive:
 ![Pantallazo de Hive](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
 
-### Resultado final:
+##### Resultado final:
 ![Resultado Final](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
 
 ### Diagrama
