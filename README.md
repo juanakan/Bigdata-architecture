@@ -48,7 +48,7 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 ![Pantallazo de Hive](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
 
 ##### Resultado final:
-![Resultado Final](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
+![Resultado Final](https://github.com/juanakan/Bigdata-architecture/blob/master/Practica_BDA.png)
 
 ### Diagrama
 [https://docs.google.com/drawings/d/1FJflTqXcQr2vmYA0-uEI04GQZUWMOU_00-u2jxAGdMQ/edit?usp=sharing]
