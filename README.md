@@ -2,7 +2,7 @@
 
 
 ### Idea general.
-. buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los airbnb mas cercanos.
+. buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los 50 airbnb mas cercanos.
 
 ### Nombre del producto.
 . Recomendador de airbnb Turismo Japones (los restaurantes Japoneses mejor valorados de Madrid)
@@ -16,8 +16,8 @@ Recoger datos de la pagina el tenedor y crear CSV.
 Tanto el CSV del tenedor como el dataset de airbnb los colocare en un segmento de
 Google Cloud.
 Desde Google Storage cogere los datos para crear 2 tablas de HIVE, y realizare
-una query con un JOIN que reste las distancias entre cada airbnb y los 10 mejores restaurantes Japoneses.
-De la query obtendre el TOP de apartamentos de airbnb de menos de 100 euros la noche.
+una query con un JOIN que busque los airbnb cerca de los mejores restaurantes Japoneses.
+De la query obtendre los 50 apartamentos de airbnb mas cercanos a los restaurantes.
 El resultado de la query lo metere en Google Storage.
 
 ### Operating model
