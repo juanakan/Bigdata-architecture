@@ -51,7 +51,7 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 
 ### Diagrama
-![Diagrama]()
+![Diagrama](https://github.com/juanakan/Bigdata-architecture/blob/master/Diagrama.png)
 
 
 
