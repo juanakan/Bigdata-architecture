@@ -35,8 +35,14 @@ Apago el cluster y me voy a dormir.
 Voy a montar una web con un link directo al Google Storage Segment Object.
 
 ### Desarrollo
-![Texto alternativo](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
-Query de HIVE
+Creación del Storage con los datos de airbnb y del tenedor:
+![Pantallazo de los cluster](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
+
+Creación de los cluster:
+![Pantallazo de los cluster](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
+![Pantallazo de los cluster](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
+![Pantallazo de los cluster](https://github.com/juanakan/Bigdata-architecture/blob/master/cluster%20hadoop.PNG)
+Query de HIVE.
 Pantallazo final
 
 ### Diagrama
