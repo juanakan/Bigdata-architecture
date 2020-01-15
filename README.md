@@ -26,14 +26,14 @@ En el segmento siempre habra un directorio llamado "input_airbnb".
 Seguire el standard de levantar el Cluster solamente cuando quiera regenerar el TOP.
 Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
-crear tabla de airbnb
-crear tabla del Tenedor
-LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_tenedor.csv' INTO TABLE tenedor;
-LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_airbnb.csv' INTO TABLE airbnb;
-SELECT JOIN INTO DIRECTORY 'gs://output/results'
+.crear tabla de airbnb
+.crear tabla del Tenedor
+.LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_tenedor.csv' INTO TABLE tenedor;
+.LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_airbnb.csv' INTO TABLE airbnb;
+.SELECT JOIN INTO DIRECTORY 'gs://output/results'
 
-Apago el cluster y me voy a dormir.
-Voy a montar una web con un link directo al Google Storage Segment Object.
+.Apago el cluster y me voy a dormir.
+.Voy a montar una web con un link directo al Google Storage Segment Object.
 
 ### Desarrollo
 
