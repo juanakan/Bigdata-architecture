@@ -1,30 +1,30 @@
-# Practica Bigdata-architecture
+# Práctica Bigdata-architecture
 
 
 ### Idea general.
-Voy a buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los 50 airbnb mas cercanos.
+Voy a buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los 50 airbnb más cercanos.
 
 ### Nombre del producto.
-Recomendador de airbnb Turismo Japones (los restaurantes Japoneses mejor valorados de Madrid y los airbnb mas cercanos)
+Recomendador de airbnb Turismo Japonés (los restaurantes Japoneses mejor valorados de Madrid y los airbnb más cercanos).
 
 ### Estrategia del DAaas.
-Voy a utilizar herramientas en la nube para realizar un reporte que puedan utilizar paginas de viajes con los 50 airbnb mas cercanos a dichos restaurantes
+Voy a usar herramientas en la nube para realizar un reporte que puedan utilizar páginas de viajes con los 50 airbnb más cercanos a dichos restaurantes.
 
 ### Arquitectura.
 Arquitectura Cloud basada en Google Cloud Storage + HIVE + Dataproc
-Recoger datos de la pagina el tenedor y crear CSV.
-Tanto el CSV del tenedor como el dataset de airbnb los colocare en un segmento de
+Recoger datos de la página "El tenedor"e y crear CSV.
+Tanto el CSV de "El tenedor" como el dataset de "airbnb" los colocaré en un segmento de
 Google Cloud.
-Desde Google Storage cogere los datos para crear 2 tablas de HIVE, y realizare
+Desde Google Storage cogeré los datos para crear 2 tablas de HIVE, y realizaré
 una query con un JOIN que busque los airbnb cerca de los mejores restaurantes Japoneses.
-De la query obtendre los 50 apartamentos de airbnb mas cercanos a los restaurantes.
-El resultado de la query lo metere en Google Storage.
+De la query obtendré los 50 apartamentos de "airbnb" más cercanos a los restaurantes.
+El resultado de la query lo meteré en Google Storage.
 
 ### Operating model
-Hay un operador que soy yo, voy a recoger los datos diariamente de la pagina el tenedor y guardare el resultado en un directorio del segmento llamado "input_tenedor".
-En el segmento siempre habra un directorio llamado "input_airbnb".
-Seguire el standard de levantar el Cluster solamente cuando quiera regenerar el listado de los restaurantes y los airbnb.
-Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
+Hay un operador, que soy yo, que va a recoger los datos diariamente de la página "El tenedor" y guardar el resultado en un directorio del segmento llamado "input_tenedor".
+En el segmento siempre habrá un directorio llamado "input_airbnb".
+Seguiré el standard de levantar el Cluster solamente cuando quiera regenerar el listado de los restaurantes y los airbnb.
+Una vez al día levantaré el CLUSTER a mano y enviaré las tareas de:
 
 . crear tabla de airbnb  
 . crear tabla del Tenedor  
@@ -38,7 +38,7 @@ Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 ### Desarrollo
 
-##### Creación del Storage con los datos de airbnb y del tenedor:
+##### Creación del Storage con los datos de "airbnb" y de "El tenedor":
 ![Pantallazo del Storage](https://github.com/juanakan/Bigdata-architecture/blob/master/google%20storage.PNG)
 
 ##### Creación de los cluster:
