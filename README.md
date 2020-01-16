@@ -26,8 +26,8 @@ En el segmento siempre habrá un directorio llamado "input_airbnb".
 Seguiré el standard de levantar el Cluster solamente cuando quiera regenerar el listado de los restaurantes y los airbnb.
 Una vez al día levantaré el CLUSTER a mano y enviaré las tareas de:
 
-. crear tabla de airbnb  
-. crear tabla del Tenedor  
+. crear tabla de "airbnb";  
+. crear tabla de "El Tenedor" 
 . LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_tenedor.csv' INTO TABLE tenedor;  
 . LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_airbnb.csv' INTO TABLE airbnb;  
 . SELECT JOIN INTO DIRECTORY 'gs://output/results'  
