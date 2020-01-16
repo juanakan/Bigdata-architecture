@@ -12,7 +12,7 @@ Voy a usar herramientas en la nube para realizar un reporte que puedan utilizar 
 
 ### Arquitectura.
 Arquitectura Cloud basada en Google Cloud Storage + HIVE + Dataproc
-Recoger datos de la página "El tenedor"e y crear CSV.
+Recoger datos de la página "El tenedor" y crear CSV.
 Tanto el CSV de "El tenedor" como el dataset de "airbnb" los colocaré en un segmento de
 Google Cloud.
 Desde Google Storage cogeré los datos para crear 2 tablas de HIVE, y realizaré
