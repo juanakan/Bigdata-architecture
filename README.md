@@ -2,13 +2,13 @@
 
 
 ### Idea general.
-. buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los 50 airbnb mas cercanos.
+Voy a buscar los 10 mejores restaurantes Japoneses de Madrid para recomendar los 50 airbnb mas cercanos.
 
 ### Nombre del producto.
-. Recomendador de airbnb Turismo Japones (los restaurantes Japoneses mejor valorados de Madrid)
+Recomendador de airbnb Turismo Japones (los restaurantes Japoneses mejor valorados de Madrid y los airbnb mas cercanos)
 
 ### Estrategia del DAaas.
-. Voy a utilizar herramientas en la nube para realizar un reporte que puedan utilizar paginas de viajes con los 50 airbnb mas cercanos a dichos restaurantes
+Voy a utilizar herramientas en la nube para realizar un reporte que puedan utilizar paginas de viajes con los 50 airbnb mas cercanos a dichos restaurantes
 
 ### Arquitectura.
 Arquitectura Cloud basada en Google Cloud Storage + HIVE + Dataproc
@@ -23,7 +23,7 @@ El resultado de la query lo metere en Google Storage.
 ### Operating model
 Hay un operador que soy yo, voy a recoger los datos diariamente de la pagina el tenedor y guardare el resultado en un directorio del segmento llamado "input_tenedor".
 En el segmento siempre habra un directorio llamado "input_airbnb".
-Seguire el standard de levantar el Cluster solamente cuando quiera regenerar el TOP.
+Seguire el standard de levantar el Cluster solamente cuando quiera regenerar el listado de los restaurantes y los airbnb.
 Una vez al dia, levantare el CLUSTER a mano, enviare las tareas de:
 
 . crear tabla de airbnb  
