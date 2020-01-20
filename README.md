@@ -27,7 +27,7 @@ Seguiré el standard de levantar el Cluster solamente cuando quiera regenerar el
 Una vez al día levantaré el CLUSTER a mano y enviaré las tareas de:
 
 . crear tabla de "airbnb";  
-. crear tabla de "El Tenedor" 
+. crear tabla de "El Tenedor"; 
 . LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_tenedor.csv' INTO TABLE tenedor;  
 . LOAD DATA INPATH 'gs://practica-big-data-arquitectura/input_airbnb.csv' INTO TABLE airbnb;  
 . SELECT JOIN INTO DIRECTORY 'gs://output/results'  
